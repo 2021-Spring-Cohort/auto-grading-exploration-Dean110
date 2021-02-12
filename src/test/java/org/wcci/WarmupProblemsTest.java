@@ -1,6 +1,7 @@
 package org.wcci;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.nio.file.Watchable;
@@ -27,9 +28,10 @@ class WarmupProblemsTest {
     }
 
     @Test
+    @DisplayName("icyHot() acceptance tests.")
     void icyHot() {
         assertAll(
-                ()-> assertThat(underTest.icyHot(120, -1)).withFailMessage("Given "+ 120 + " and " + -1 +" expected true.").isTrue(),
+                ()-> assertThat(underTest.icyHot(120, -1)).withFailMessage("Given "+ 120 + " and " + -1 +" expected true.").isFalse(),
                 ()-> assertThat(underTest.icyHot(-1, 120)).isTrue(),
                 ()-> assertThat(underTest.icyHot(2, 120)).withFailMessage("Given "+ 2 + " and " + 120 +" expected false.").isFalse(),
                 ()-> assertThat(underTest.icyHot(-10, 100)).isFalse(),
