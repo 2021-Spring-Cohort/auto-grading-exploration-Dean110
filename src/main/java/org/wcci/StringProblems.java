@@ -15,9 +15,13 @@ public class StringProblems {
      * - smallestStringSorter("zizzer", "zazzer") -> "zizzerzazzer"
      */
 
-    public String smallestStringSorter(String stringA, String stringB){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+    public String smallestStringSorter(String stringA, String stringB) {
+        if (stringA.length() < stringB.length() && !stringA.isEmpty()) {
+            return stringA;
+        } else if (stringA.length() == stringB.length()) {
+            return stringA + stringB;
+        }
+        return stringB;
     }
 
     /*
@@ -30,9 +34,8 @@ public class StringProblems {
      * - evenUpperCaseOrOddLowerCase("Hello") -> "hello"
      * - evenUpperCaseOrOddLowerCase("Zizzer Zazzer Zuzz") -> "ZIZZER ZAZZER ZUZZ"
      */
-    public String evenUpperCaseOrOddLowerCase(String str){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+    public String evenUpperCaseOrOddLowerCase(String str) {
+        return str.length() % 2 == 1 ? str.toLowerCase() : str.toUpperCase();
     }
 
     /*
@@ -45,9 +48,9 @@ public class StringProblems {
      * - stringCombiner("Hello", "There") -> "HelloThere"
      * - stringCombiner("Zizzer" "zazzer") -> "zazzerZizzer"
      */
-    public String stringCombiner(String stringA, String stringB){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+    public String stringCombiner(String stringA, String stringB) {
+
+        return stringA.compareToIgnoreCase(stringB) < 0 ? stringA + stringB : stringB + stringA;
     }
 
     /*
@@ -61,8 +64,7 @@ public class StringProblems {
      * - left2("Hi") → "Hi"
      */
 
-    public String left2(String str){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+    public String left2(String str) {
+        return str.substring(2) + str.substring(0, 2);
     }
 }
