@@ -29,9 +29,9 @@ class WarmupProblemsTest {
     @Test
     void icyHot() {
         assertAll(
-                ()-> assertThat(underTest.icyHot(120, -1)).isTrue(),
+                ()-> assertThat(underTest.icyHot(120, -1)).withFailMessage("Given "+ 120 + " and " + -1 +" expected true.").isTrue(),
                 ()-> assertThat(underTest.icyHot(-1, 120)).isTrue(),
-                ()-> assertThat(underTest.icyHot(2, 120)).isFalse(),
+                ()-> assertThat(underTest.icyHot(2, 120)).withFailMessage("Given "+ 2 + " and " + 120 +" expected false.").isFalse(),
                 ()-> assertThat(underTest.icyHot(-10, 100)).isFalse(),
                 ()-> assertThat(underTest.icyHot(0, 120)).isFalse(),
                 ()-> assertThat(underTest.icyHot(200, 0)).isFalse()
