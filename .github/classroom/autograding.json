@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Squirrel Play Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.LogicProblemsTest.squirrelPlay",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Near Ten Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.LogicProblemsTest.nearTen",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Smallest String Sorter Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.StringProblemsTest.smallestStringSorter",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Even Upper Case Odd Lower Case Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.StringProblemsTest.evenUpperCaseOddLowerCase",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "String Combiner Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.StringProblemsTest.stringCombiner",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Left Two Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.StringProblemsTest.left2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "String Times Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.WarmupProblemsTest.stringTimes",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Icy Hot Test",
+      "setup": "",
+      "run": "./gradlew test --tests org.wcci.WarmupProblemsTest.icyHot",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
